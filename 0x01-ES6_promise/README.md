@@ -1,20 +1,20 @@
-Promises in JavaScript
+## Promises in JavaScript
 A Promise in JavaScript is like a "promise" in real life. Imagine you ordered something online. The store "promises" to deliver it. Now, this promise can have three states:
 
-Pending: You're waiting for the package.
-Fulfilled: You got your package.
-Rejected: There was a problem, and the package didn’t arrive.
+## Pending: You're waiting for the package.
+## Fulfilled: You got your package.
+## Rejected: There was a problem, and the package didn’t arrive.
 In JavaScript, Promises help manage asynchronous tasks, such as waiting for data from an API or reading a file. Promises prevent "callback hell" (nested callbacks) and make the code cleaner.
 
-Setup
-Installed NodeJS 12.11.x
+## Setup
+## Installed NodeJS 12.11.x
 
-Installation of Jest, Babel, and ESLint.
+## Installation of Jest, Babel, and ESLint.
 
-Configuration Files
-package.json
+## Configuration Files
+## package.json
 
-{
+# {
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
     "check-lint": "lint [0-9]*.js",
@@ -33,7 +33,7 @@ package.json
     "jest": "^24.9.0"
   }
 }
-babel.config.js
+## babel.config.js
 module.exports = {
   presets: [
     [
@@ -46,7 +46,7 @@ module.exports = {
     ],
   ],
 };
-utils.js
+## utils.js
 export function uploadPhoto() {
   return Promise.resolve({
     status: 200,
@@ -61,7 +61,7 @@ export function createUser() {
     lastName: 'Salva',
   });
 }
-.eslintrc.js
+## .eslintrc.js
 module.exports = {
   env: {
     browser: false,
@@ -97,4 +97,4 @@ module.exports = {
     }
   ]
 };
-Run npm install in the root directory where we have the package.son file
+## Run npm install in the root directory where we have the package.son file
